@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:hsma_cpd_trainit/widgets/TainingDay.dart';
+import 'package:hsma_cpd_trainit/widgets/training_tab_widget.dart';
 
 void main() {
   runApp(const TrainItApp());
@@ -63,7 +63,7 @@ class _DaysBarState extends State<DaysBar> {
           ),
         ),
         body: TabBarView(
-          children: currentDays.map((Tab tab) => TainingDay(day: tab.text!)).toList(),
+          children: currentDays.map((Tab tab) => TrainingDay(day: tab.text!)).toList(),
         ),
       ),
     );
